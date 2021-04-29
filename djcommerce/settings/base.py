@@ -120,3 +120,7 @@ STATIC_URL = "/assets/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = os.path.join(BASE_DIR, "public")
+
+
+# User Authentication
+LOGIN_REDIRECT_URL="/"

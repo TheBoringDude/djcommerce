@@ -1,0 +1,49 @@
+{% extends 'acc_forms.html' %}
+
+{% block title %}
+    Create Account - djcommerce
+{% endblock title %}
+
+
+{% block content %}
+<div class="mt-8">
+  <h3 class="py-3 text-lg tracking-wide">Create a New User Account</h3>
+
+  <!-- login error message -->
+  <div class="my-2 py-2 text-white bg-red-400 w-1/2 mx-auto rounded-lg">
+    <p>Incorrect username or password.</p>
+  </div>
+  <!-- end login error message -->
+
+  <div class="mt-4 w-1/2 mx-auto text-left">
+    <form action="">
+      <div class="my-3 flex flex-col">
+        <label class="mb-1 tracking-wide" for="">First Name: </label>
+        <input class="text-lg border rounded-lg py-2 px-3" type="text" name="fname" placeholder="What is your first name?" />
+      </div>
+      <div class="my-3 flex flex-col">
+        <label class="mb-1 tracking-wide" for="">Last Name: </label>
+        <input class="text-lg border rounded-lg py-2 px-3" type="text" name="lname" placeholder="What is your last name?" />
+      </div>
+      <div class="my-3 flex flex-col">
+        <label class="mb-1 tracking-wide" for="">Email Address: </label>
+        <input class="text-lg border rounded-lg py-2 px-3" type="text" name="email" placeholder="What is your email address?" />
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="my-3 flex flex-col">
+        <label class="mb-1 tracking-wide" for="">Username: </label>
+        <input class="text-lg border rounded-lg py-2 px-3" type="text" name="username" placeholder="Your account username" />
+      </div>
+      <div class="my-3 flex flex-col">
+        <label class="mb-1 tracking-wide" for="">Password: </label>
+        <input class="text-lg border rounded-lg py-2 px-3" type="password" name="password" placeholder="Your account password" />
+      </div>
+      <div class="my-3 flex w-1/2 mx-auto">
+        <button type="submit" class="py-2 w-full rounded-lg bg-blue-500 hover:bg-blue-600 text-white">Create Account</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock content %}
