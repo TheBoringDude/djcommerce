@@ -8,3 +8,6 @@ migrations/
 *.env
 
 yarn.lock
+
+
+assets/css/style.css
